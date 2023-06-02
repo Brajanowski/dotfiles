@@ -1,0 +1,26 @@
+set ideamarks
+set ideajoin
+
+set clipboard+=unnamed
+set number relativenumber
+set scrolloff=5
+set incsearch
+set nohlsearch
+set ignorecase
+set smartcase
+set visualbell
+set history=1000
+
+set NERDTree
+
+nmap [[ <Action>(MethodUp)
+nmap ]] <Action>(MethodDown)
+nmap gb <Action>(Back)
+nmap gD <Action>(GotoTypeDeclaration)
+nmap <leader>s <Action>(ShowUsages)
+nmap <leader>t <Action>(FindUsages)
+nmap <leader>x <Action>(HideAllWindows)
+nmap <leader>n <Action>(NERDTreeToggle)
+
+set idearefactormode=keep
+nnoremap <C-r> :action RenameElement<CR>
