@@ -28,18 +28,17 @@ Plug 'ThePrimeagen/harpoon'
 Plug 'sheerun/vim-polyglot'
 call plug#end()
 
-colorscheme github_dark_default
+colorscheme github_dark_high_contrast
 
 nmap <leader>n :NERDTreeToggle<cr>
 
 nmap <leader>bn :bnext<cr>
 nmap <leader>bp :bprevious<cr>
 
+nmap <C-d> <C-d>zz
+nmap <C-u> <C-u>zz
 nmap <C-h> <cmd>:lua require("harpoon.mark").add_file()<cr>
 nmap <C-e> <cmd>:lua require("harpoon.ui").toggle_quick_menu()<cr>
-nmap <C-d> <cmd>:lua require("harpoon.ui").nav_next()<cr>
-nmap <C-f> <cmd>:lua require("harpoon.ui").nav_prev()<cr>
-
 nmap <C-p> <cmd>Telescope find_files<cr>
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
